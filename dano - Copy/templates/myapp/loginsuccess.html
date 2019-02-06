@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>Login</title>
+    {% load static %}
+    <link href={% static 'myapp/main.css' %} rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+{% include 'myapp/head.html' %}
+{% block header %}
+{% endblock %}
+
+<div>
+  <h1>Welcome Back {{ name }}</h1>
+  <h3><a href="/credit/">Credit</a>
+    <a href="/debit/">Debit</a>
+    <a href="/check_bal/">Check Balance</a>
+    <a href="/edit_profile/">Edit Profile</a>
+    <a href=""></a>
+    <a href=""></a>
+      </h3>
+</div>
+
+{%include 'myapp/foot.html' %}
+{% block footer %}
+{% endblock %}
+</body>
+</html>
